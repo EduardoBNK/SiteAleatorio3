@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+   
+    
+}
+
+.esquerda .link {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    color: black;
+    background: white;
+    animation: box_animation 2s infinite ease-in-out;
+}
+
+.esquerda .link:hover{
+    background: black;
+    color: white;
+    scale: 1.2;
+    animation: box2_animation 2s infinite ease-in-out;
+    box-shadow: 0 0 20px black;
+}
+.meio .link {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    transition: .5s;
+    color: black;
+    background: white;
+    animation: box_animation 2s infinite ease-in-out;
+    
+}
+
+.meio .link:hover{
+    background: black;
+    scale: 1.2;
+    color: white;
+    animation: box2_animation 2s infinite ease-in-out;
+    box-shadow: 0 0 30px black;
+}
+.direita .link {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    transition: .5s;
+    color: black;
+    background: white;
+    animation: box_animation 2s infinite ease-in-out;
+    
+}
+
+.direita .link:hover{
+    background: black;
+    color: white;
+    scale: 1.2;
+    animation: box2_animation 2s infinite ease-in-out;
+    box-shadow: 0 0 20px black;
+    
+}
+.direita{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.meio{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.esquerda i{
+    transition: .2s;
+}
+
+.esquerda i:hover{
+    scale: 1.2;
+}
+.meio i{
+    transition: .2s;
+}
+
+.meio i:hover{
+    scale: 1.2;
+}
+.direita i{
+    transition: .2s;
+}
+
+.direita i:hover{
+    scale: 1.2;
+}
+
+.flex{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index:99;
+    padding-top: 380px;
+    
+}
+
+.flex h1{
+    font-size: 100px;
+    letter-spacing: 15px;
+    color: white;
+    animation: text_animation 2s infinite ease-in-out;
+    text-shadow: 0 0 20px white;
+    transition: .5s;
+   
+}
+
+
+.titulo img{
+    filter: brightness(40%);
+    width: 100%;
+    position: relative;
+    height: 101vh;
+    margin-bottom: -5.5px;
+}
+
+@keyframes text_animation{
+    0%{
+        text-shadow: 0 0 5px white;
+    }
+    50%{
+        text-shadow: 0 0 30px white;
+    }
+    100%{
+        text-shadow: 0 0 5px white;
+    }
+
+}
+
+.flex h1:hover{
+    scale: 1.1;
+    color: black;
+    animation: depois_animation 2s infinite ease-in-out;
+    text-shadow: 0 0 30px black;
+}
+
+@keyframes depois_animation{
+    0%{
+        text-shadow: 0 0 5px black;
+    }
+    50%{
+        text-shadow: 0 0 30px black;
+    }
+    100%{
+        text-shadow: 0 0 5px black;
+    }
+}
+
+@keyframes box_animation{
+
+    0%{
+        box-shadow: 0 0 5px white;
+    }
+
+    50%{
+        box-shadow: 0 0 30px white;
+    }
+
+    100%{
+        box-shadow: 0 0 5px white;
+    }
+
+
+}
+
+@keyframes box2_animation{
+
+    0%{
+        box-shadow: 0 0 5px black;
+    }
+
+    50%{
+        box-shadow: 0 0 30px black;
+    }
+
+    100%{
+        box-shadow: 0 0 5px black;
+    }
+
+
+}
+
+#corpo img{
+    width: 100%;
+    height: 100vh;
+    filter: brightness(40%);
+    position: relative;
+    
+}
+
+
+
+.flex2{
+    position: absolute;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.flex2 h2{
+    letter-spacing: 10px;
+    padding-top: 50px;
+    font-size: 70px;
+    color: black;
+    transition: .5s;
+    animation: anderson 2s infinite ease-in-out;
+    text-shadow: 0 0 20px white;
+    
+   
+}
+.flex2 h2:hover{
+    scale: 1.1;
+    color: white;
+   
+    animation: anderson 2s infinite ease-in-out;
+   
+   
+    
+}
+@keyframes meg{
+0%{
+    text-shadow:0 0 5px black ;
+}
+50%{
+    text-shadow:0 0 30px black;
+}
+100%{
+    text-shadow:0 0 5px black ;
+}
+
+
+}
+@keyframes anderson{
+    0%{
+        text-shadow:0 0 5px white ;
+    }
+    50%{
+        text-shadow:0 0 30px white;
+    }
+    100%{
+        text-shadow:0 0 5px white ;
+    }
+    }
+
+    @keyframes pudim{
+        0%{
+            scale: 1.2;
+        }
+        100%{
+            scale: 1.1;
+        }
+    }
+
+    
+
+  .corpo3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 149;
+   
+  }
+
+  .corpo3 .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    margin: 0 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.192);
+    background: black;
+    color: white;
+    border-radius: 20px;
+    transition: .3s;
+    animation: dado 2s infinite ease-in-out;
+    
+  }
+  .corpo3 .link:hover{
+    scale: 1.2;
+    background: white;
+    color: black;
+    animation: dado2 2s infinite ease-in-out;
+  }
+
+  @keyframes dado{
+    0%{
+        box-shadow: 0 0 5px black;
+    }
+    50%{
+        box-shadow: 0 0 30px black;
+    }
+    100%{
+        box-shadow: 0 0 5px black;
+    }
+
+  }
+
+  @keyframes dado2{
+    0%{
+        box-shadow: 0 0 5px white;
+    }
+    50%{
+        box-shadow: 0 0 30px white;
+    }
+    100%{
+        box-shadow: 0 0 5px white;
+    }
+
+  }
+
+
+  .corpo3  i{
+    transition: .2s;
+  }
+  .corpo3  i:hover{
+    scale: 1.2;
+  }
+
+  .letras {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    width: 100%;
+    padding-top: 520px;
+    z-index: 50;
+    
+    
+  }
+  .letras .link{
+    margin: 20px;
+    
+    
+    
+  }
+
+
+  .letras .link5{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 220px;
+    font-size: 20px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    background: black;
+    margin-bottom: 20px;
+    
+  }
+  .letras .link6{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 220px;
+    font-size: 20px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    background: black;
+   
+  }
+
+  .letras a{
+    text-decoration: none;
+    color: white;
+   
+    
+  }
+
+    .letras i{
+        font-size: 60px;
+        
+        
+    }
+
+    .letras .download{
+        font-size: 15px;
+        
+    }
+
+    .separacao{
+        padding-left: 10px;
+       
+        
+    }
+
+    .separacao2{
+        padding-left: 10px;
+        
+      
+    }
